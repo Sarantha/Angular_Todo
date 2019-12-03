@@ -1,3 +1,2 @@
-<h1>todo work</h1>
-<app-todo-items *ngFor='let todo of todos' [todo]="todo">
-</app-todo-items>
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<app-todo-items *ngFor='let todo of todos' [todo]="todo" (deletTodo)="deletTodo($event)"></app-todo-items>
